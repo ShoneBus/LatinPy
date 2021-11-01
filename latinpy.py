@@ -218,10 +218,6 @@ try:
             for multiple_translation in translation.multiple_translation_results:
                 print(
                     f'{multiple_translation.lemma} - {multiple_translation.description}')
-            # facciamo finta che clicco sul primo
-            target_new_word = translation.multiple_translation_results[0].lemma
-            new_word_result = engine.get_translation(target_new_word, 'en')
-            block = 1
         else:
             print('Single translation found!')
             print(f'{translation.translation_results.lemma}:')
