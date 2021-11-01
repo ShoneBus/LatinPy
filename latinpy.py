@@ -203,8 +203,12 @@ class dictionary_engine:
 ---------------------------------------------------------------------------------------
                                 - LatinPy v 0.0.1 -
 """
-# basic usage example
+
+"""
+Basic Usage Example:
+
 engine = dictionary_engine()
+
 try:
     translation = engine.get_translation('laudaveris', 'fr')
 
@@ -230,3 +234,4 @@ try:
 except KeyError as e:
     print(e.args[0])
     print()
+"""
